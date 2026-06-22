@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="Portfolio d’Ismail Moussa, étudiant en BUT Réseaux &amp; Télécommunications et apprenti administrateur réseau : projets, compétences, alternance, cybersécurité et infrastructure." name="description"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ismail Moussa | Portfolio R&amp;T</title>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<meta content="#07111f" name="theme-color"/></head>
+<body>
+<!-- EFFET DE FOND CYBER -->
+<div class="cyber-bg">
+<canvas id="network-canvas"></canvas>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+</div>
+<!-- BARRE DE NAVIGATION EN HAUT -->
+<nav>
+<div class="nav-inner">
+<a aria-label="Retour à l’accueil" class="logo" href="#accueil">ISMAIL<span>.M</span></a>
+<ul class="nav-links" id="nav-links">
+<li><a class="active-link" href="#accueil">Accueil</a></li>
+<li><a href="#projets">Projets</a></li>
+<li><a href="#competences">Compétences</a></li>
+<li><a href="#alternance">Alternance</a></li>
+<li><a href="#a-propos">À propos</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="nav-actions">
+<button aria-label="Changer de thème" class="theme-btn" id="theme-toggle" type="button"><i class="fa-solid fa-sun"></i></button>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Ouvrir le menu" class="menu-toggle" id="menu-toggle" type="button"><i class="fa-solid fa-bars"></i></button>
+</div>
+</div>
+</nav>
+<!-- HERO HEADER -->
+<header class="hero-section reveal section-target" id="accueil">
+<div class="hero-text">
+<p class="top-tagline">BUT R&amp;T • Réseaux • Cybersécurité • Cloud/DevOps</p>
+<h1 class="hover-name">Ismail<br/>Moussa</h1>
+<p class="role">Apprenti administrateur réseau</p>
+<p class="intro-text" style="max-width: 680px;">Je conçois, administre et sécurise des infrastructures réseau avec une approche terrain : câblage, brassage, supervision, support et documentation. Mon objectif : évoluer vers le Cloud/DevOps en gardant une base réseau solide.</p>
+<div class="hero-buttons"><a class="btn btn-primary" href="#projets">Voir mes projets</a><a class="btn btn-secondary" href="#contact">Me contacter</a></div><div aria-label="Points forts" class="hero-focus">
+<span><i class="fa-solid fa-hospital"></i> Alternance en environnement hospitalier</span>
+<span><i class="fa-solid fa-folder-open"></i> 12 projets documentés</span>
+<span><i class="fa-solid fa-cloud"></i> Objectif Cloud / DevOps</span>
+</div>
+<div aria-label="Synthèse du portfolio" class="hero-metrics">
+<div><strong>12</strong><span>projets</span></div>
+<div><strong>5</strong><span>domaines</span></div>
+<div><strong>1</strong><span>alternance</span></div>
+</div>
+</div>
+<div class="hero-image-container">
+<div class="image-wrapper">
+<img alt="Portrait Ismail Moussa" src="assets/img/portrait-ismail.webp"/>
+</div>
+<p class="status-text"><span class="pulse-dot"></span> Disponible pour échanger sur les réseaux, la sécurité et le Cloud.</p>
+</div>
+</header>
+<!-- BANNIÈRE TECHNOLOGIES DÉFILANTE -->
+<div class="tech-marquee-wrapper reveal">
+<div class="tech-marquee">
+<div class="tech-marquee-content">
+<span>WIRESHARK</span><span class="dot">•</span>
+<span>PACKET TRACER</span><span class="dot">•</span>
+<span>DOCKER</span><span class="dot">•</span>
+<span>KUBERNETES</span><span class="dot">•</span>
+<span>BASH</span><span class="dot">•</span>
+<span>POWERSHELL</span><span class="dot">•</span>
+<span>ACTIVE DIRECTORY</span><span class="dot">•</span>
+<span>BURP SUITE</span><span class="dot">•</span>
+<span>METASPLOIT</span><span class="dot">•</span>
+<span>NMAP</span><span class="dot">•</span>
+<span>CISCO</span><span class="dot">•</span>
+<span>PYTHON</span><span class="dot">•</span>
+</div>
+<div class="tech-marquee-content">
+<span>WIRESHARK</span><span class="dot">•</span>
+<span>PACKET TRACER</span><span class="dot">•</span>
+<span>DOCKER</span><span class="dot">•</span>
+<span>KUBERNETES</span><span class="dot">•</span>
+<span>BASH</span><span class="dot">•</span>
+<span>POWERSHELL</span><span class="dot">•</span>
+<span>ACTIVE DIRECTORY</span><span class="dot">•</span>
+<span>BURP SUITE</span><span class="dot">•</span>
+<span>METASPLOIT</span><span class="dot">•</span>
+<span>NMAP</span><span class="dot">•</span>
+<span>CISCO</span><span class="dot">•</span>
+<span>PYTHON</span><span class="dot">•</span>
+</div>
+</div>
+</div>
+<div class="main-content">
+<!-- SECTION PROJETS (AVEC LES 12 PROJETS COMPLETS) -->
+<section class="reveal section-target" id="projets">
+<p class="section-eyebrow">PORTFOLIO</p><h2>Réalisations techniques</h2>
+<p class="intro-text" style="max-width: 760px;">12 projets classés par domaine, avec objectif, contribution, compétences et preuves. L’objectif : montrer une progression claire en réseaux, cybersécurité, systèmes, développement et télécommunications.</p>
+<div aria-label="Résumé des projets" class="project-summary">
+<span><i class="fa-solid fa-layer-group"></i> 12 projets</span>
+<span><i class="fa-solid fa-filter"></i> Filtres par domaine</span>
+<span><i class="fa-solid fa-link"></i> Preuves cliquables</span>
+</div><div class="project-filters">
+<button class="filter-btn active" data-filter="all">Tous</button>
+<button class="filter-btn" data-filter="cyber">Cybersécurité</button>
+<button class="filter-btn" data-filter="reseau">Réseaux</button>
+<button class="filter-btn" data-filter="systeme">Systèmes</button>
+<button class="filter-btn" data-filter="dev">Développement</button>
+<button class="filter-btn" data-filter="telecom">Télécoms</button>
+</div>
+<div class="projets-grid">
+<!-- Projet 1 -->
+<div class="projet-card" data-category="cyber systeme" data-competences="Pentest,Cybersécurité,Metasploit,Pivotage réseau,Linux (Sudo/Root),Rédaction de rapport" data-date="Janvier 2026" data-desc="Audit de sécurité complet mené de bout en bout avec pivotage réseau et élévation de privilèges." data-livrable="Rapport de Test d'Intrusion détaillé" data-objectif="Réaliser un test d'intrusion pédagogique dans le strict respect d'un cadre légal. L'objectif était d'identifier et d'exploiter des vulnérabilités pour compromettre une cible isolée via un point de pivot (Samba), jusqu'à l'obtention d'un accès administrateur (Root)." data-preuve-link="assets/img/projet-pentest.webp" data-preuve-nom="Capture / support du projet de pentest" data-realisation="J'ai entièrement conçu et mené ce test d'intrusion de bout en bout : compromission initiale du premier serveur (pivot) via une faille Samba, scan complet du réseau interne isolé depuis ce pivot, découverte et exploitation d'une application web (DVWA) pour obtenir un accès shell, et enfin élévation de privilèges via une erreur de configuration Sudo pour obtenir l'accès Root." data-tags="Pentest,Metasploit,Cybersécurité,Linux" data-titre="Test d'Intrusion &amp; Pivotage Réseau">
+<div class="projet-img-wrapper">
+<img alt="Test d'Intrusion" class="projet-img" src="assets/img/projet-pentest.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Test d'Intrusion &amp; Pivotage</h3>
+<span class="projet-date">2026</span>
+</div>
+<div class="projet-tags">
+<span>Pentest</span><span>Linux</span>
+</div>
+<p class="projet-desc">Audit pédagogique avec pivot réseau, exploitation et élévation de privilèges.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 2 -->
+<div class="projet-card" data-category="reseau cyber" data-competences="Sécurité LAN,Attaques Couche 2 (ARP/VLAN),Protocole 802.1X,Ingénierie pédagogique" data-date="2026" data-desc="Création et configuration d'un TP académique complet axé sur l'exploitation et la protection de la couche 2." data-livrable="Sujet de TP, Maquette de configuration, Guide de remédiation 802.1X" data-objectif="Concevoir un environnement de laboratoire pédagogique pour tester la résilience des réseaux locaux. L'objectif était de simuler des menaces critiques de niveau 2 et d'implémenter des mécanismes d'authentification robustes." data-preuve-link="assets/img/projet-couche2.webp" data-preuve-nom="Support visuel du TP couche 2" data-realisation="J'ai entièrement conçu et rédigé de A à Z un sujet de TP complet destiné à des étudiants. J'ai configuré les maquettes pour mener et analyser différentes attaques de couche 2, notamment l'ARP Spoofing et le VLAN Hopping. Pour la partie remédiation, j'ai implémenté l'architecture de sécurisation et d'authentification centralisée via le protocole 802.1X." data-tags="Réseau,Cybersécurité,Couche 2,802.1X" data-titre="Sécurisation des Réseaux LAN &amp; Attaques Couche 2">
+<div class="projet-img-wrapper">
+<img alt="Sécurisation LAN" class="projet-img" src="assets/img/projet-couche2.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Sécurisation LAN &amp; 802.1X</h3>
+<span class="projet-date">2026</span>
+</div>
+<div class="projet-tags">
+<span>Réseau</span><span>802.1X</span>
+</div>
+<p class="projet-desc">TP complet sur les attaques couche 2 et la mise en place d’une défense 802.1X.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 3 -->
+<div class="projet-card" data-category="cyber dev" data-competences="Architecture SaaS,Développement Python,Scan de vulnérabilités,Travail en équipe (6 personnes)" data-date="2026" data-desc="Conception collaborative d'un écosystème Cloud pour l'audit de sécurité automatisé de sites web." data-livrable="Moteur de scan avancé, Documentation d'intégration API" data-objectif="Développer une plateforme SaaS centralisée capable d'analyser à la demande la surface d'attaque et les vulnérabilités de n'importe quel site web distant." data-preuve-link="assets/img/projet-webattack.webp" data-preuve-nom="Illustration du module de scan web" data-realisation="Au sein d'un groupe de 6 personnes, j'ai pris la responsabilité technique du cœur de l'application. Je me suis personnellement occupé du développement et de la configuration de la brique de 'scan avancé', permettant d'automatiser la détection de failles complexes et de structurer la remontée de données vers l'interface utilisateur." data-tags="SaaS,Cybersécurité,Python,Web" data-titre="Plateforme SaaS de Scan de Vulnérabilités">
+<div class="projet-img-wrapper">
+<img alt="Plateforme SaaS" class="projet-img" src="assets/img/projet-webattack.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Plateforme SaaS de Scan</h3>
+<span class="projet-date">2026</span>
+</div>
+<div class="projet-tags">
+<span>SaaS</span><span>Scan Avancé</span>
+</div>
+<p class="projet-desc">Projet en groupe de 6. Concepteur exclusif de la brique de scan de vulnérabilités avancé.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 4 -->
+<div class="projet-card" data-category="dev cyber" data-competences="Développement mobile (Android),Développement Java,API REST / JSON,Git / GitHub,Travail en équipe" data-date="2025-2026" data-desc="Création d'un écosystème logiciel pour la détection et la centralisation de failles réseau." data-livrable="Dépôt GitHub (Code Java, Web, Android)" data-objectif="Réaliser une infrastructure logicielle complète présentant les failles détectées sur un réseau local via un scanner Java, un site web et une application mobile." data-preuve-link="assets/img/projet-apps-communicantes.webp" data-preuve-nom="Preuve visuelle de l’application communicante" data-realisation="Au sein de ce projet d'équipe, je me suis personnellement occupé du développement complet de l'application mobile Android. J'ai conçu son architecture multi-activités et programmé la communication réseau en arrière-plan pour interroger l'interface web via une API JSON, permettant la visualisation fluide et mobile des vulnérabilités." data-tags="Java,Android,Web,Cybersécurité" data-titre="Développement d'applications communicantes">
+<div class="projet-img-wrapper">
+<img alt="App Communicantes" class="projet-img" src="assets/img/projet-apps-communicantes.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Applications Communicantes</h3>
+<span class="projet-date">25-26</span>
+</div>
+<div class="projet-tags">
+<span>Java/Android</span><span>API JSON</span>
+</div>
+<p class="projet-desc">Application Android connectée à une API JSON pour consulter les failles détectées.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 5 -->
+<div class="projet-card" data-category="reseau systeme cyber" data-competences="Sécurité réseau,Routage dynamique (OSPF),Tolérance aux pannes (HSRP / STP),Équipements Cisco réels" data-date="2025-2026" data-desc="Administration, routage et sécurisation d'un système d'information multisite complet." data-livrable="Fichier Packet Tracer, Fichiers de configuration des équipements réels" data-objectif="Concevoir une architecture robuste avec équilibrage de charge, tolérance aux pannes, routage dynamique, intégration de la Téléphonie IP et accès VPN sécurisés." data-preuve-link="assets/img/projet-reseau-multisite.webp" data-preuve-nom="Schéma / preuve du réseau multi-sites" data-realisation="Lors de la phase de déploiement sur des équipements physiques réels, je me suis spécialisé et occupé de la haute disponibilité et de l'ingénierie du routage. J'ai configuré la redondance et la tolérance aux pannes du réseau via les protocoles HSRP et STP (RSTP), tout en implémentant le routage dynamique via le protocole OSPF." data-tags="Réseau,Cisco ASA,VPN,OSPF,HSRP" data-titre="Conception d'un réseau sécurisé multi-sites">
+<div class="projet-img-wrapper">
+<img alt="Réseau Multi-sites" class="projet-img" src="assets/img/projet-reseau-multisite.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Réseau sécurisé multi-sites</h3>
+<span class="projet-date">25-26</span>
+</div>
+<div class="projet-tags">
+<span>Réseau</span><span>OSPF / HSRP</span>
+</div>
+<p class="projet-desc">Architecture Cisco avec OSPF, HSRP/STP, VPN et haute disponibilité.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 6 -->
+<div class="projet-card" data-category="telecom dev" data-competences="Python,Traitement du Signal,Numérisation,Débruitage audio" data-date="2025" data-desc="Développement d'outils de simulation en Python pour étudier l'impact de la numérisation sur les signaux." data-livrable="Scripts Python, Rapport d'étude de simulation" data-objectif="Analyser et caractériser un système inconnu (boîte noire). L'objectif était d'étudier l'influence de la numérisation (échantillonnage et quantification) sur un signal et d'opérer un traitement numérique." data-preuve-link="assets/img/projet-signaux.webp" data-preuve-nom="Graphiques de simulation des signaux" data-realisation="J'ai réalisé l'intégralité de ce projet d'analyse en solitaire. J'ai codé de A à Z les scripts sous Python permettant de caractériser le système, d'observer les effets de la numérisation et d'appliquer des algorithmes de débruitage sur un signal audio." data-tags="Python,Traitement du signal,Simulation" data-titre="Simulation &amp; Numérisation de Signaux (SAE 22)">
+<div class="projet-img-wrapper">
+<img alt="Simulation Python" class="projet-img" src="assets/img/projet-signaux.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Simulation &amp; Numérisation</h3>
+<span class="projet-date">2025</span>
+</div>
+<div class="projet-tags">
+<span>Python</span><span>Signaux</span>
+</div>
+<p class="projet-desc">Scripts Python pour analyser, numériser et débruiter des signaux.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 7 -->
+<div class="projet-card" data-category="telecom reseau" data-competences="Technologie LoRaWAN,IoT,Mesures Radio,Bilan de liaison" data-date="2025" data-desc="Caractérisation et mesures d'une liaison radio LoRaWAN pour l'Internet des Objets." data-livrable="Rapport d'étude critique du projet IoT" data-objectif="Étudier la faisabilité et les performances d'une transmission sans-fil IoT en utilisant des cartes LoRa UCA. Il fallait évaluer le compromis entre la portée de la transmission, le débit de données et la consommation énergétique." data-preuve-link="assets/img/projet-lorawan.webp" data-preuve-nom="Mesures et synthèse LoRaWAN" data-realisation="Au sein d'un groupe de 3 étudiants, je me suis occupé spécifiquement de la campagne de tests et des mesures caractéristiques. J'ai évalué les équipements en conditions réelles (émission/réception) pour valider le cahier des charges et le bilan de liaison de notre réseau." data-tags="IoT,LoRaWAN,Réseau Sans-Fil,Mesures" data-titre="Étude de Transmission IoT : Technologie LoRaWAN (SAE 22)">
+<div class="projet-img-wrapper">
+<img alt="Projet LoRa" class="projet-img" src="assets/img/projet-lorawan.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Transmission IoT : LoRaWAN</h3>
+<span class="projet-date">2025</span>
+</div>
+<div class="projet-tags">
+<span>IoT / LoRa</span><span>Réseau Sans-fil</span>
+</div>
+<p class="projet-desc">Mesures radio et étude de faisabilité d’une liaison IoT LoRaWAN.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 8 -->
+<div class="projet-card" data-category="dev systeme reseau" data-competences="Développement Python,Configuration Raspberry Pi,Communication Réseau,Gestion de projet" data-date="2024-2025" data-desc="Conception d'un outil matériel et logiciel de traçabilité réseau pour Thales Alenia Space." data-livrable="Rapport de conception technique complet, Scripts Python" data-objectif="Collaborer avec un acteur industriel pour concevoir un système de prise de photos automatique ou manuelle contrôlé par une interface web locale pour la traçabilité des bancs." data-preuve-link="assets/docs/rapport-thales-sae23.pdf" data-preuve-nom="Rapport technique complet" data-realisation="Pour ce projet à forte valeur industrielle, je me suis personnellement chargé de la configuration technique du Raspberry Pi (OS, scripts de capture, droits système) ainsi que du développement de la communication réseau et de l'échange de données entre les différents éléments matériels et logiciels du système." data-tags="Python,Réseau,Raspberry Pi" data-titre="Système de prise de photos pour bancs avioniques (Thales)">
+<div class="projet-img-wrapper">
+<img alt="Projet Thales" class="projet-img" src="assets/img/projet-thales.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Projet Thales Alenia Space</h3>
+<span class="projet-date">24-25</span>
+</div>
+<div class="projet-tags">
+<span>Python</span><span>Raspberry Pi</span>
+</div>
+<p class="projet-desc">Configuration Raspberry Pi et communication réseau pour un système de traçabilité.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 9 -->
+<div class="projet-card" data-category="cyber" data-competences="Vulgarisation technique,Analyse de menaces,Cybersécurité,Travail en équipe" data-date="2024-2025" data-desc="Analyse approfondie de menaces informatiques et réalisation d'un support vidéo de sensibilisation." data-livrable="Diaporama PowerPoint, Vidéo de sensibilisation" data-objectif="Analyser des cyberattaques récentes, comprendre les failles exploitées avec leurs impacts, et proposer des bonnes pratiques concrètes pour s’en prémunir." data-preuve-link="assets/img/projet-cyber.webp" data-preuve-nom="Support de sensibilisation cybersécurité" data-realisation="Projet mené au sein d'un groupe en quadrinôme (4 personnes). Nous avons étudié et catégorisé 10 cyberattaques majeures. J'ai participé activement à l'analyse technique des vulnérabilités, à la schématisation des vecteurs d'attaque ainsi qu'à la scénarisation de notre vidéo pédagogique finale." data-tags="Cybersécurité,Menace,Risques" data-titre="Sensibilisation à l’hygiène informatique &amp; cybersécurité">
+<div class="projet-img-wrapper">
+<img alt="Sensibilisation Cybersécurité" class="projet-img" src="assets/img/projet-cyber.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Sensibilisation Cybersécurité</h3>
+<span class="projet-date">24-25</span>
+</div>
+<div class="projet-tags">
+<span>Cybersécurité</span><span>Quadrinôme</span>
+</div>
+<p class="projet-desc">Analyse de cyberattaques et production d’un support pédagogique.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 10 -->
+<div class="projet-card" data-category="reseau" data-competences="Wireshark,Routage (Traceroute),Réseau LAN,Analyse Énergétique / CO2" data-date="2024" data-desc="Analyse complète d'une infrastructure réseau locale, de la topologie au bilan énergétique." data-livrable="Rapport d'investigation réseau, Schémas topologiques, Vidéos de démonstration" data-objectif="Découvrir, tester et modéliser un réseau informatique réel. L'objectif était de comprendre les interactions entre équipements (routage, DNS, DHCP), d'analyser le trafic réseau et d'évaluer la consommation énergétique (conversion en émission de CO2)." data-preuve-link="assets/docs/projet-sae12.pdf" data-preuve-nom="Rapport d’investigation réseau" data-realisation="J'ai mené cette investigation réseau en totale autonomie. J'ai modélisé l'architecture, effectué des captures et des analyses fines de trames via Wireshark, tracé les routes IP via Traceroute, et calculé l'impact environnemental de l'infrastructure en g de CO2." data-tags="Réseau,Wireshark,Analyse de trafic,Éco-conception" data-titre="Analyse et Découverte d'un Réseau Informatique (SAE 12)">
+<div class="projet-img-wrapper">
+<img alt="Analyse Réseau" class="projet-img" src="assets/img/projet-sfr.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Analyse de Réseau &amp; Énergie</h3>
+<span class="projet-date">2024</span>
+</div>
+<div class="projet-tags">
+<span>Wireshark</span><span>Topologie LAN</span>
+</div>
+<p class="projet-desc">Modélisation de topologie, analyse Wireshark et bilan CO2 d'une infrastructure (Réalisé en solo).</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 11 -->
+<div class="projet-card" data-category="telecom" data-competences="MatLab,Physique des Ondes,Câble Coaxial,Adaptation d'Impédance" data-date="2024" data-desc="Caractérisation physique et électromagnétique d'une liaison par câble coaxial." data-livrable="Rapport de caractérisation de la liaison physique" data-objectif="Découvrir et caractériser un dispositif de transmission physique (câble coaxial). Il fallait étudier la propagation des ondes électromagnétiques, comprendre l'adaptation d'impédance et modéliser le rapport d'ondes stationnaires (ROS)." data-preuve-link="assets/img/projet-coaxial.webp" data-preuve-nom="Preuve visuelle de la liaison coaxiale" data-realisation="J'ai accompli ce projet de simulation et de caractérisation physique seul de A à Z. Je me suis appuyé sur MatLab pour simuler le comportement du câble coaxial, évaluer l'atténuation du signal, modéliser le phénomène de réflexion et calculer précisément les ondes stationnaires." data-tags="Télécoms,MatLab,Câble Coaxial,Ondes" data-titre="Étude de Lignes de Transmission &amp; Ondes (SAE 13)">
+<div class="projet-img-wrapper">
+<img alt="Lignes de transmission" class="projet-img" src="assets/img/projet-coaxial.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Lignes de Transmission</h3>
+<span class="projet-date">2024</span>
+</div>
+<div class="projet-tags">
+<span>MatLab</span><span>Ondes / Coaxial</span>
+</div>
+<p class="projet-desc">Caractérisation de lignes coaxiales et ondes stationnaires via MatLab (Réalisé en solo de A à Z).</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+<!-- Projet 12 -->
+<div class="projet-card" data-category="cyber" data-competences="E-reputation,Analyse de cas,Communication,Sensibilisation,Vulgarisation" data-date="2024" data-desc="Sensibilisation aux enjeux et risques liés à l’e-réputation." data-livrable="Diaporama PowerPoint, Activité interactive" data-objectif="Comprendre les concepts d’e-réputation, analyser des cas concrets, identifier les risques et bonnes pratiques pour gérer son image en ligne." data-preuve-link="assets/img/projet-e-reputation.webp" data-preuve-nom="Support de sensibilisation à l’e-réputation" data-realisation="J'ai participé à la constitution de ressources pédagogiques détaillées incluant un diaporama documentaire, une stratégie d’intervention, et la création d’une activité interactive pour animer une séance de sensibilisation." data-tags="E-reputation,Analyse,Web,Communication" data-titre="Introduction à l'e-reputation">
+<div class="projet-img-wrapper">
+<img alt="E-reputation" class="projet-img" src="assets/img/projet-e-reputation.webp"/>
+</div>
+<div class="projet-content">
+<div class="projet-header">
+<h3>Introduction à l'e-reputation</h3>
+<span class="projet-date">2024</span>
+</div>
+<div class="projet-tags">
+<span>E-réputation</span><span>Communication</span>
+</div>
+<p class="projet-desc">Analyse et création de ressources de sensibilisation sur les risques numériques.</p><div class="proof-chip"><i class="fa-solid fa-circle-check"></i> Preuve disponible</div>
+<button class="btn btn-secondary projet-btn">Voir le détail</button>
+</div>
+</div>
+</div>
+</section>
+<section class="reveal section-target" id="competences">
+<p class="section-eyebrow">SAVOIR-FAIRE</p><h2>Compétences techniques</h2>
+<p class="intro-text" style="max-width: 760px;">Compétences regroupées par domaines et reliées aux projets pour une lecture rapide : réseau, sécurité, systèmes, automatisation et communication technique.</p>
+<div class="competences-grid">
+<div class="competence-card">
+<div class="comp-header-new">
+<div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+<h3>Cybersécurité &amp; Audit</h3>
+</div>
+<div class="comp-skills-new">
+<div class="skill-category">
+<h4>Offensif (Pentest)</h4>
+<div class="skill-tags">
+<span>Metasploit</span><span>Burp Suite</span><span>Nmap</span><span>Élévation de privilèges</span>
+</div>
+</div>
+<div class="skill-category">
+<h4>Défensif &amp; Gouvernance</h4>
+<div class="skill-tags">
+<span>802.1X</span><span>ARP Spoofing</span><span>Wireshark</span><span>OSINT</span>
+</div>
+</div>
+</div>
+<div class="comp-projects-new">
+<h4><i class="fa-solid fa-link" style="margin-right: 5px;"></i> Mises en pratique :</h4>
+<div class="project-pills">
+<a href="#" onclick="goToProject(event, 'cyber', 'Test d\'Intrusion &amp; Pivotage Réseau')">Test d'Intrusion</a>
+<a href="#" onclick="goToProject(event, 'cyber', 'Sécurisation des Réseaux LAN &amp; Attaques Couche 2')">Sécurisation LAN</a>
+<a href="#" onclick="goToProject(event, 'cyber', 'Plateforme SaaS de Scan de Vulnérabilités')">Scanner SaaS</a>
+<a href="#" onclick="goToProject(event, 'cyber', 'Développement d\'applications communicantes')">App Communicantes</a>
+<a href="#" onclick="goToProject(event, 'cyber', 'Conception d\'un réseau sécurisé multi-sites')">Réseau Multi-sites</a>
+<a href="#" onclick="goToProject(event, 'cyber', 'Sensibilisation à l’hygiène informatique &amp; cybersécurité')">Sensibilisation</a>
+<a href="#" onclick="goToProject(event, 'cyber', 'Introduction à l\'e-reputation')">E-reputation</a>
+</div>
+</div>
+</div>
+<div class="competence-card">
+<div class="comp-header-new">
+<div class="icon-box"><i class="fa-solid fa-network-wired"></i></div>
+<h3>Réseaux &amp; Télécoms</h3>
+</div>
+<div class="comp-skills-new">
+<div class="skill-category">
+<h4>Infrastructures &amp; Routage</h4>
+<div class="skill-tags">
+<span>Cisco IOS</span><span>Aruba</span><span>OSPF</span><span>HSRP / STP</span><span>VPN</span>
+</div>
+</div>
+<div class="skill-category">
+<h4>IoT &amp; Modélisation</h4>
+<div class="skill-tags">
+<span>LoRaWAN</span><span>MatLab</span><span>GNS3</span><span>Packet Tracer</span>
+</div>
+</div>
+</div>
+<div class="comp-projects-new">
+<h4><i class="fa-solid fa-link" style="margin-right: 5px;"></i> Mises en pratique :</h4>
+<div class="project-pills">
+<a href="#" onclick="goToProject(event, 'reseau', 'Sécurisation des Réseaux LAN &amp; Attaques Couche 2')">Sécurisation LAN</a>
+<a href="#" onclick="goToProject(event, 'reseau', 'Conception d\'un réseau sécurisé multi-sites')">Réseau Multi-sites</a>
+<a href="#" onclick="goToProject(event, 'reseau', 'Étude de Transmission IoT : Technologie LoRaWAN (SAE 22)')">LoRaWAN</a>
+<a href="#" onclick="goToProject(event, 'reseau', 'Système de prise de photos pour bancs avioniques (Thales)')">Thales Avionique</a>
+<a href="#" onclick="goToProject(event, 'reseau', 'Analyse et Découverte d\'un Réseau Informatique (SAE 12)')">Analyse SAE 12</a>
+<a href="#" onclick="goToProject(event, 'telecom', 'Étude de Lignes de Transmission &amp; Ondes (SAE 13)')">Ondes SAE 13</a>
+</div>
+</div>
+</div>
+<div class="competence-card">
+<div class="comp-header-new">
+<div class="icon-box"><i class="fa-solid fa-code"></i></div>
+<h3>Développement &amp; Scripting</h3>
+</div>
+<div class="comp-skills-new">
+<div class="skill-category">
+<h4>Langages &amp; Architectures</h4>
+<div class="skill-tags">
+<span>Python</span><span>Java</span><span>Android</span><span>API REST / JSON</span><span>Git</span>
+</div>
+</div>
+</div>
+<div class="comp-projects-new">
+<h4><i class="fa-solid fa-link" style="margin-right: 5px;"></i> Mises en pratique :</h4>
+<div class="project-pills">
+<a href="#" onclick="goToProject(event, 'dev', 'Plateforme SaaS de Scan de Vulnérabilités')">Scanner SaaS</a>
+<a href="#" onclick="goToProject(event, 'dev', 'Développement d\'applications communicantes')">App Communicantes</a>
+<a href="#" onclick="goToProject(event, 'dev', 'Simulation &amp; Numérisation de Signaux (SAE 22)')">Simulation Python</a>
+<a href="#" onclick="goToProject(event, 'dev', 'Système de prise de photos pour bancs avioniques (Thales)')">Scripts Thales</a>
+</div>
+</div>
+</div>
+<div class="competence-card">
+<div class="comp-header-new">
+<div class="icon-box"><i class="fa-solid fa-server"></i></div>
+<h3>Systèmes &amp; DevOps</h3>
+</div>
+<div class="comp-skills-new">
+<div class="skill-category">
+<h4>Administration &amp; Conteneurs</h4>
+<div class="skill-tags">
+<span>Linux</span><span>Windows Server (AD)</span><span>Bash</span><span>Docker</span><span>Raspberry Pi</span>
+</div>
+</div>
+</div>
+<div class="comp-projects-new">
+<h4><i class="fa-solid fa-link" style="margin-right: 5px;"></i> Mises en pratique :</h4>
+<div class="project-pills">
+<a href="#alternance">Alternance Hôpital</a>
+<a href="#" onclick="goToProject(event, 'systeme', 'Test d\'Intrusion &amp; Pivotage Réseau')">Test d'Intrusion</a>
+<a href="#" onclick="goToProject(event, 'systeme', 'Conception d\'un réseau sécurisé multi-sites')">Réseau Multi-sites</a>
+<a href="#" onclick="goToProject(event, 'systeme', 'Système de prise de photos pour bancs avioniques (Thales)')">Architecture Thales</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION ALTERNANCE -->
+<section class="reveal section-target" id="alternance">
+<p class="section-eyebrow">EXPÉRIENCE</p><h2>Alternance en infrastructure réseau</h2>
+<p class="intro-text" style="max-width: 760px;">En alternance à l’Institut Arnault Tzanck, j’interviens sur une infrastructure hospitalière réelle : câblage, brassage, Wi‑Fi, VPN, supervision et support. Priorité : disponibilité, rigueur et qualité de service.</p>
+<div class="alternance-dashboard">
+<div class="alternance-main">
+<h3>Administrateur Réseau &amp; Sécurité (Apprenti)</h3>
+<div class="alternance-company">Institut Arnault Tzanck — Mougins &amp; Saint-Laurent-du-Var</div>
+<div class="mission-block">
+<h4><i class="fa-solid fa-network-wired"></i>Déploiement et Maintenance</h4>
+<ul class="clean-list"><li>Mise en service et dépannage de switchs Aruba/HP, routeurs Juniper, bornes Wi‑Fi et téléphones IP.</li><li>Brassage propre des locaux techniques avec repérage, câblage et documentation.</li></ul>
+</div>
+<div class="mission-block">
+<h4><i class="fa-solid fa-shield-halved"></i>Sécurisation du Réseau</h4>
+<ul class="clean-list"><li>Migration d’équipements hors VLAN natif et sécurisation progressive du LAN.</li><li>Accompagnement des utilisateurs sur les accès VPN GlobalProtect.</li></ul>
+</div>
+<div class="mission-block">
+<h4><i class="fa-solid fa-chart-line"></i>Supervision &amp; Sauvegardes</h4>
+<ul class="clean-list"><li>Création et suivi de sondes PRTG pour anticiper les incidents.</li><li>Vérification des sauvegardes automatiques FTP/TFTP et résolution d’anomalies.</li></ul>
+</div>
+</div>
+<div class="alternance-sidebar"><div class="alternance-stats">
+<div class="stat-box compact"><span class="stat-number">2</span><span class="stat-label">sites principaux</span></div>
+<div class="stat-box compact"><span class="stat-number">24/7</span><span class="stat-label">continuité réseau</span></div>
+<div class="stat-box compact"><span class="stat-number">LAN</span><span class="stat-label">Wi‑Fi, VPN, supervision</span></div>
+</div>
+<div class="tech-table-box" style="margin-bottom: 0;">
+<h4>Preuves Opérationnelles</h4>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+<div class="image-proof-wrapper" style="position: relative;">
+<img alt="Installation de bornes Wi-Fi" class="image-proof" onclick="openLightbox(this.src, 'Installation et configuration d\'une borne Wi-Fi AP305C')" src="assets/img/alternance-borne-wifi.webp" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; cursor: pointer;"/>
+<span style="position: absolute; bottom: 5px; right: 5px; font-size: 0.7rem; padding: 2px 6px; border-radius: 4px;">Action</span>
+</div>
+<div class="image-proof-wrapper" style="position: relative;">
+<img alt="Brassage switch" class="image-proof" onclick="openLightbox(this.src, 'Câblage et brassage rigoureux d\'un switch Huawei.')" src="assets/img/alternance-cablage-switch.webp" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; cursor: pointer;"/>
+<span style="position: absolute; bottom: 5px; right: 5px; font-size: 0.7rem; padding: 2px 6px; border-radius: 4px;">Technique</span>
+</div>
+</div>
+</div>
+<div class="tech-table-box">
+<h4>Stack Opérationnelle</h4>
+<table class="tech-table">
+<tr><td>Équipements</td><td>Aruba, HP, Juniper, Huawei</td></tr>
+<tr><td>Supervision</td><td>PRTG, Exaprobe</td></tr>
+<tr><td>Sécurité</td><td>GlobalProtect, VLAN</td></tr>
+</table>
+</div>
+</div>
+</div>
+<div class="section-cta">
+<a class="btn btn-primary" href="#contact">Échanger sur mon expérience</a>
+</div></section>
+<!-- SECTION A PROPOS -->
+<section class="reveal section-target" id="a-propos">
+<p class="section-eyebrow">PROFIL</p><h2>À propos</h2>
+<p class="intro-text" style="max-width: 760px;">Quelques repères personnels qui expliquent ma façon de travailler : discipline, créativité, communication et racines familiales.</p>
+<div class="profil-container">
+<div class="profil-card">
+<div class="profil-image-wrapper">
+<video autoplay="" class="profil-img" loop="" muted="" playsinline="" src="assets/video/sport-discipline.mp4" style="object-position: center;"></video>
+</div>
+<div class="profil-text">
+<h3>Sport et discipline personnelle</h3>
+<p>Le sport m’aide à garder une discipline régulière. La musculation, pratiquée avec constance, renforce ma confiance, ma rigueur et ma capacité à progresser étape par étape.</p>
+</div>
+</div>
+<div class="profil-card reverse">
+<div class="profil-image-wrapper" style="background: transparent; border: none; box-shadow: none;">
+<img alt="Création de contenu" class="profil-img" src="assets/img/creation-contenu-reseaux.webp" style="object-fit: contain; filter: none;"/>
+</div>
+<div class="profil-text">
+<h3>Création &amp; Communication</h3>
+<p>La création de formats courts m’apprend à synthétiser une idée, structurer un message et capter l’attention. Une compétence utile pour vulgariser des sujets techniques.</p>
+</div>
+</div>
+<div class="profil-card">
+<div class="profil-image-wrapper" style="display: flex; justify-content: center; align-items: center; background: rgba(0, 168, 255, 0.05); border: none; box-shadow: none;">
+<img alt="Soutien familial" class="profil-img" src="assets/img/racines-familiales.webp" style="object-fit: contain; filter: none;"/>
+</div>
+<div class="profil-text">
+<h3>Mes racines familiales</h3>
+<p>Mes racines familiales sont un pilier. Le soutien de mes proches, notamment de mes parents, nourrit ma détermination et mon envie de construire un avenir solide qui les rende fiers.</p>
+</div>
+</div>
+</div>
+<div class="section-cta">
+<a class="btn btn-primary" href="#competences">Découvrir mes compétences techniques</a>
+</div></section>
+<!-- SECTION CONTACT -->
+<section class="reveal section-target" id="contact">
+<div style="text-align: center; margin-bottom: 4rem;">
+<p class="section-eyebrow">CONTACT</p><h2>Contact</h2>
+<p class="intro-text" style="max-width: 760px;">Pour échanger sur mon parcours, mes projets ou une opportunité, contactez-moi directement par e-mail, LinkedIn ou GitHub.</p>
+</div>
+<div class="contact-layout">
+<div class="contact-info-side">
+<h3>Échanger avec moi</h3>
+<p style="margin-bottom: 2rem; color: #a0aec0;">Disponible pour échanger autour des réseaux, de la cybersécurité et des projets d’infrastructure.</p>
+<div class="info-item">
+<div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+<div>
+<h4>Email</h4>
+<a href="mailto:moussa.ismail@etu.unice.fr">moussa.ismail@etu.unice.fr</a>
+</div>
+</div>
+<div class="info-item">
+<div class="info-icon"><i class="fa-brands fa-linkedin"></i></div>
+<div>
+<h4>LinkedIn</h4>
+<a href="https://www.linkedin.com/in/moussa-i-7a829b352/?skipRedirect=true" target="_blank">Mon réseau professionnel</a>
+</div>
+</div>
+<div class="info-item">
+<div class="info-icon"><i class="fa-brands fa-github"></i></div>
+<div>
+<h4>GitHub</h4>
+<a href="https://github.com/MoussaIsmail" target="_blank">Mes scripts et projets</a>
+</div>
+</div>
+</div>
+<div class="contact-form-side">
+<!-- Remplacer "TON_ID_FORMSPREE" par ton ID réel -->
+<form action="mailto:moussa.ismail@etu.unice.fr" class="custom-form" enctype="text/plain" method="POST">
+<div class="form-group">
+<label for="name">Nom</label>
+<input id="name" name="name" placeholder="Votre nom" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input id="email" name="email" placeholder="votre.email@exemple.fr" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" placeholder="Bonjour Ismail, je souhaite échanger au sujet de..." required="" rows="4"></textarea>
+</div>
+<button class="btn btn-primary" style="width: 100%; border: none;" type="submit">
+<i class="fa-solid fa-paper-plane" style="margin-right: 8px;"></i> Préparer l’e-mail
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</div>
+<!-- BOUTON RETOUR EN HAUT -->
+<footer class="site-footer">
+<p>Portfolio d’Ismail Moussa — BUT Réseaux &amp; Télécommunications</p>
+<p>Réseaux • Cybersécurité • Infrastructure • Cloud/DevOps</p>
+</footer><a aria-label="Retour en haut" class="back-to-top" href="#" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+<!-- MODAL PROJET -->
+<div aria-hidden="true" class="modal-projet" id="modal-projet">
+<div class="modal-overlay"></div>
+<div class="modal-content-wrapper">
+<button aria-label="Fermer" class="modal-close">×</button>
+<div class="modal-dynamic-content">
+<!-- Le contenu est injecté via JS -->
+</div>
+</div>
+</div>
+<!-- LIGHTBOX IMAGE -->
+<div id="lightbox-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: none; justify-content: center; align-items: center; z-index: 3000; flex-direction: column; cursor: zoom-out;">
+<img id="lightbox-img" style="max-width: 90%; max-height: 80vh; border: 2px solid var(--accent-color); border-radius: 8px;"/>
+<p id="lightbox-caption" style="color: #ffffff; margin-top: 1rem; font-family: var(--font-body); font-size: 1.1rem; text-align: center; max-width: 80%;"></p>
+</div>
+<!-- SCRIPTS -->
+
+<script src="assets/js/main.js" defer></script></body>
+</html>
