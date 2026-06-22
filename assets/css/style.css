@@ -2066,3 +2066,54 @@ body.light-mode .btn-primary {
     .hero-image-container { max-width: 300px; }
     .status-text { font-size: .78rem; }
 }
+.hero,
+.hero-content,
+.home,
+#accueil {
+    overflow: hidden;
+}
+
+.tech-marquee,
+.hero-marquee,
+.skills-marquee,
+.stack-strip {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tech-marquee-track,
+.marquee-track,
+.stack-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+    min-width: max-content;
+    animation: marquee-scroll 22s linear infinite;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-marquee,
+    .hero-marquee,
+    .skills-marquee,
+    .stack-strip {
+        width: 100%;
+        margin-inline: 0;
+    }
+
+    .tech-marquee-track,
+    .marquee-track,
+    .stack-track {
+        gap: 1.2rem;
+        animation-duration: 16s;
+    }
+}
