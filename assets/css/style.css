@@ -361,45 +361,84 @@ h2 {
     animation: pulse 2s infinite; 
 }
 
-.tech-marquee-wrapper { 
-    width: 100vw; 
-    position: relative; 
-    left: 50%; 
-    right: 50%; 
-    margin-left: -50vw; 
-    margin-right: -50vw; 
-    background: rgba(5, 11, 20, 0.5); 
-    border-top: 1px solid var(--border-color); 
-    border-bottom: 1px solid var(--border-color); 
-    padding: 1.2rem 0; 
-    overflow: hidden; 
-    display: flex; 
-    margin-bottom: 8rem; 
+/* === CORRECTION BARRE TECHNOLOGIES DÉFILANTE === */
+
+.tech-marquee-wrapper {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background: rgba(5, 11, 20, 0.5);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.1rem 0;
+    overflow: hidden;
+    margin: 2rem auto 6rem;
 }
 
-.tech-marquee { 
-    display: flex; 
-    width: max-content; 
+.tech-marquee {
+    display: flex;
+    width: max-content;
+    min-width: max-content;
+    animation: tech-scroll 32s linear infinite;
 }
 
-.tech-marquee-content { 
-    display: flex; 
-    align-items: center; 
-    animation: scroll-left 40s linear infinite; 
+.tech-marquee-content {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
-.tech-marquee-content span { 
-    font-family: var(--font-headings); 
-    font-size: 1rem; 
-    font-weight: 600; 
-    color: var(--text-muted); 
-    letter-spacing: 2px; 
+.tech-marquee-content span {
+    font-family: var(--font-headings);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-.tech-marquee-content .dot { 
-    color: var(--accent-color); 
-    margin: 0 2rem; 
-    font-size: 1.5rem; 
+.tech-marquee-content .dot {
+    color: var(--accent-color);
+    margin: 0 2rem;
+    font-size: 1.4rem;
+}
+
+@keyframes tech-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.tech-marquee-wrapper:hover .tech-marquee {
+    animation-play-state: paused;
+}
+
+body.light-mode .tech-marquee-wrapper {
+    background: rgba(255, 255, 255, 0.48);
+}
+
+@media (max-width: 900px) {
+    .tech-marquee-wrapper {
+        width: 100%;
+        margin: 1.5rem auto 4rem;
+    }
+
+    .tech-marquee {
+        animation-duration: 22s;
+    }
+
+    .tech-marquee-content span {
+        font-size: 0.82rem;
+        letter-spacing: 1.4px;
+    }
+
+    .tech-marquee-content .dot {
+        margin: 0 1.2rem;
+    }
 }
 
 @keyframes scroll-left { 
